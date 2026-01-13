@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Prosentkalkulator med forklaring</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Prosentkalkulator</h1>
+    <p>Velg type prosentregning, skriv inn tall, og få både svar og forklaring.</p>
+
+    <label for="type">Type regnestykke:</label>
+    <select id="type">
+      <option value="partOfWhole">Prosent av et tall</option>
+      <option value="increase">Prosentvis økning</option>
+      <option value="decrease">Prosentvis nedgang</option>
+    </select>
+
+    <div id="inputs">
+      <!-- Innholdet her endres med JavaScript -->
+    </div>
+
+    <button id="calculateBtn">Regn ut</button>
+
+    <div id="result" class="card hidden">
+      <h2>Resultat</h2>
+      <p id="answer"></p>
+      <h3>Forklaring steg for steg</h3>
+      <p id="explanation"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
